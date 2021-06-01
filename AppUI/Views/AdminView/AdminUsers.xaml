@@ -1,0 +1,26 @@
+﻿<Window x:Class="AppUI.Views.AdminView.AdminUsers"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppUI.Views.AdminView"
+        mc:Ignorable="d"
+        Title="AdminUsers" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="label" Content="Users" HorizontalAlignment="Left" Margin="65,30,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="UserList"  ItemsSource="{Binding UsersList}" Margin="65,86,439,85" SelectionChanged="UserList_SelectionChanged">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <CheckBox Content="{Binding itemText}"  Checked="UserChecked"/>
+                        <TextBlock Text="{Binding itemText}" />
+                        <TextBlock Text="{Binding itemRole}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Button x:Name="UpdateUser" Content="UpdateUser" HorizontalAlignment="Left" Margin="485,126,0,0" VerticalAlignment="Top" Click="UpdateUser_Click"/>
+
+
+    </Grid>
+</Window>

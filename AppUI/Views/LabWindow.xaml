@@ -1,0 +1,26 @@
+﻿<Window x:Class="AppUI.Views.LabWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AppUI.Views"
+        mc:Ignorable="d"
+        Title="LabWindow" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="label" Content="Doctor Protal" HorizontalAlignment="Left" Margin="28,29,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="Name" HorizontalAlignment="Left" Margin="41,78,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1_Copy" Content="Age" HorizontalAlignment="Left" Margin="41,94,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1_Copy1" Content="Sex" HorizontalAlignment="Left" Margin="41,110,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1_Copy2" Content="Contact" HorizontalAlignment="Left" Margin="41,126,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="Name" HorizontalAlignment="Left" Margin="144,83,0,0" Text=" " TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="Age" HorizontalAlignment="Left" Margin="144,103,0,0" Text=" " TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="Gender" HorizontalAlignment="Left" Margin="144,121,0,0" Text=" " TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock x:Name="Contact" HorizontalAlignment="Left" Margin="144,137,0,0" Text=" " TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Label x:Name="label2" Content="Search" HorizontalAlignment="Left" Margin="41,0,0,0" VerticalAlignment="Center"/>
+        <TextBox x:Name="Search" HorizontalAlignment="Left" Margin="125,217,0,0" Text=" " TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="PatientSearch" Content="Search Patient" HorizontalAlignment="Left" Margin="86,264,0,0" VerticalAlignment="Top" Click="PatientSearch_Click"/>
+        <ListBox x:Name="TestList" Margin="400,54,137,198"/>
+        <Label x:Name="Total" Content="Total" HorizontalAlignment="Left" Margin="450,304,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
